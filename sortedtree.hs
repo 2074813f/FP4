@@ -42,4 +42,4 @@ addInOrder (Node value left right) x
 
 treeToList :: Tree -> [Int]
 treeToList Leaf = []
-treeToList (Node value left right) = treeToList left ++ (value:[]) ++ treeToList right
+treeToList (Node value left right) = treeToList left ++ ([value]) ++ treeToList right
